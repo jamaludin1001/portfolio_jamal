@@ -4,55 +4,155 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .w3-row-padding img {margin-bottom: 12px}
+        /* Set the width of the sidebar to 120px */
+        .w3-sidebar {width: 120px;background: rgba(4, 145, 150, 0.85);}
+        /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+        #main {margin-left: 120px}
+        /* Remove margins from "page content" on small screens */
+        @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+    </style>
     <title>Portfolio Jamaludin</title>
+    
 </head>
-<body>
-    <h1>My Portfolio</h1><hr/>
-    <h2>About Me</h2>
-    <p>Hay perkenalkan nama saya Jamaludn Saputra, Asal saya dari kota Cilacap. Saya lulusan D3 Manajemen Informatika STMIK Mercusuar Bekasi.
-        Bahasa pemrograman yang saya pelajari di kampus antara lain; Php, Java Netbeen, C++, Visual basic 2010. Dan TA saya membuat
-        website sistem informasi pada bengkel tempat saya bekerja. Keseharian saya bekerja disalah satu bengkel di daerah Bekasi
-        jabatan saya adalah seorang mekanik </p>
-    <h2>Skils</h2>
-    <ul>
-        <li>php</li>
-        <li>Phyton</li>
-        <li>Java</li>
-    </ul>
-    <h2>Other Skils</h2>
-    <ol>
-        <li>Drive</li>
-        <li>Mekanik</li>
-    </ol>
-    <h2>My Close Friends</h2>
-    <table border="1px solid black" style="width:auto">
-        <tr>
-            <th>Nama</th>
-            <th>Alamat</th>
-            <th>Kelas</th>
-          </tr>
-          <tr>
-            <td>Imelza</td>
-            <td>Padang</td>
-            <td>Komputerisasi Akuntansi</td>
-          </tr>
-          <tr>
-            <td>Farid</td>
-            <td>Medan</td>
-            <td>Komputerisasi Akuntansi</td>
-          </tr>
-    </table>
-    <h2>Contact Me</h2>
-        <form action="/action_page.php">
-            <label for="email">Email:</label>
-            <input type="text" id="email" name="email"><br><br>
-            <label for="message">Message:</label>
-            <input type="text" id="message" name="message"><br><br>
-            <input type="submit" value="Submit">
-          </form>
-          
-          <p>Click the "Submit" button and the form-data will be sent to a page on the 
-          server called "action_page.php".</p>
+<body class="w3-black">
+    <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+    <!-- Avatar image in top left corner -->
+    <img src="gambar/Remini20211123221741860.jpg" style="width:100%">
+        <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+            <i class="fa fa-home w3-xlarge"></i>
+            <p>HOME</p>
+        </a>
+        <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-user w3-xlarge"></i>
+            <p>ABOUT ME</p>
+        </a>
+        <a href="#skills" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-eye w3-xlarge"></i>
+            <p>SKILLS</p>
+        </a>
+        <a href="#otherskills" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-eye w3-xlarge"></i>
+            <p> OTHER SKILS</p>
+        </a>
+        <a href="#myclosefriends" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-eye w3-xlarge"></i>
+            <p>MY CLOSE FRIENDS</p>
+        </a>
+        <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-envelope w3-xlarge"></i>
+            <p>CONTACT ME</p>
+        </a>
+    </nav>
+  
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+        <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+            <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+            <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+            <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT ME</a>
+            <a href="#skills" class="w3-bar-item w3-button" style="width:25% !important">SKILLS</a>
+            <a href="#otherskills" class="w3-bar-item w3-button" style="width:25% !important">OTHER SKILLS</a>
+            <a href="#myclosefriends" class="w3-bar-item w3-button" style="width:25% !important">MY CLOSE FRIENDS</a>
+            <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT ME</a>
+            </div>
+        </div>
+<!-- Page Content -->
+        <div class="w3-padding-large" id="main">
+            <!-- Header/Home -->
+            <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+            <h1 class="w3-jumbo"><span class="w3-hide-small">My Portfolio.</h1>
+            <p>Jamaludin Saputra.</p>
+            <img src="gambar/Remini20211123221741860.jpg" alt="jamal" class="w3-image" width="992" height="1000">
+            </header> 
+<!-- About Section -->
+        <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">  
+            <hr style="width:200px" class="w3-opacity">
+                <h2>About Me</h2>
+                <p>Hay perkenalkan nama saya Jamaludn Saputra, Asal saya dari kota Cilacap.
+                    Saya lulusan D3 Manajemen Informatika STMIK Mercusuar Bekasi.Bahasa pemrograman 
+                    yang saya pelajari di kampus antara lain; Php, Java Netbeen, C++, Visual basic 2010. 
+                    Dan TA saya membuat website sistem informasi pada bengkel 
+                    tempat saya bekerja. Keseharian saya bekerja disalah satu bengkel di daerah Bekasi
+                    jabatan saya adalah seorang mekanik </p>
 
-</body>
+        <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="skills">
+            <hr style="width:200px" class="w3-opacity">
+                <h2>Skills</h2>
+                <p class="w3-wide">Php</p>
+                <div class="w3-white">
+                    <div class="w3-dark-grey" style="height:28px;width:95%"></div>
+                </div>
+                <p class="w3-wide">Python</p>
+                <div class="w3-white">
+                    <div class="w3-dark-grey" style="height:28px;width:85%"></div>
+                </div>
+                <p class="w3-wide">Java</p>
+                <div class="w3-white">
+                    <div class="w3-dark-grey" style="height:28px;width:80%"></div>
+                </div><br>
+
+        <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="otherskills">
+            <hr style="width:200px" class="w3-opacity">
+                <h2> Other Skills</h2>
+                <p class="w3-wide">Drive</p>
+                <div class="w3-white">
+                    <div class="w3-dark-grey" style="height:28px;width:100%"></div>
+                </div>
+                <p class="w3-wide">Mekanik</p>
+                <div class="w3-white">
+                    <div class="w3-dark-grey" style="height:28px;width:95%"></div>
+                </div><br>
+    
+    <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="myclosefriends">
+        <hr style="width:200px" class="w3-opacity">
+            <h2>My Close Friends</h2>
+                <table class="w3-table w3-bordered w3-striped">
+                    <tr class="w3-teal">
+                        <th>Nama</th>
+                        <th>Alamat</th>
+                        <th>Kelas</th>
+                    </tr>
+                    <tr>
+                        <td>Imelza</td>
+                        <td>Padang</td>
+                        <td>Komputerisasi Akuntansi</td>
+                    </tr>
+                    <tr>
+                        <td>Farid</td>
+                        <td>Medan</td>
+                        <td>Komputerisasi Akuntansi</td>
+                    </tr>
+                    <tr>
+                        <td>Mita</td>
+                        <td>Palembang</td>
+                        <td>Komputerisasi Akuntansi</td>
+                    </tr>
+                </table>
+        </div><br>
+    <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="contact">
+        <hr style="width:200px" class="w3-opacity">
+            <h2>Contact Me</h2>
+                <form action="/action_page.php" target="_blank">
+                    <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+                    <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+                    <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
+                    <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+                    <p>
+                    <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+                        <i class="fa fa-paper-plane"></i> SEND MESSAGE
+                    </button>
+                    </p>
+                </form>
+            </div> 
+        </div>  
+  
+        <footer class="w3-container w3-teal">
+            <center><p>jamaludinsaputra</p></center>
+        </footer>
+    </div>
+    </body>
 </html>
